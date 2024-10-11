@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sample.css" />
+    <style>
+        .fl {
+            float: left;
+            margin-left: 1rem;
+            padding: 0.7rem 1.2rem;
+            list-style-type: none;
+        }
+
+        .fl:hover {
+            background-color: #0071bd;
+            color: white !important;
+            padding: 0.7rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .fl>a {
+            text-decoration: none;
+            color: #0071bd;
+            border-radius: 6px;
+        }
+
+        a:hover {
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .no-hover:hover {
+            background-image: unset !important;
+            text-decoration: unset !important;
+        }
+
+        .no-hover>img:hover {
+            background-image: unset !important;
+            text-decoration: unset !important;
+        }
+        .div{
+            width: 100px;
+            height: 100px;
+            margin: 1rem;
+            display: inline-block;
+            border: 10px solid black;
+            box-sizing: content-box;
+            /*      visibility: hidden; */
+        }
+        .div:nth-of-type(3){
+            background-color: red;
+        }
+        .div:nth-of-type(2){
+            background-color: green;
+        }
+        .div:nth-of-type(1){
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="desktop-view">
+            <ul class="no-hover">
+                <li class="fl no-hover"><img style="width: 180px;height: 40px;"
+                        src="../../../../Downloads/MargeyLabs.png" /></li>
+            </ul>
+            <ul style="list-style-type: none;">
+                <li class="fl"><a href="#">Home</a></li>
+                <li class="fl"><a href="#">Courses</a></li>
+                <li class="fl"><a href="#">ContactUs</a></li>
+                <li class="fl"><a href="#">Pricing</a></li>
+                <li class="fl"><a href="#">Products</a></li>
+                <li class="fl"><a href="#">Explore</a></li>
+            </ul>
+            <ul>
+                <li style="float: right;"><svg fill="#0071bd" height="24px" width="24px" version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 297 297" xml:space="preserve">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M255.75,0h-148.5c-5.522,0-10,4.478-10,10v112h-39.5c-14.612,0-26.5,11.888-26.5,26.5S43.138,175,57.75,175h39.5v112 c0,5.522,4.478,10,10,10h148.5c5.522,0,10-4.478,10-10V10C265.75,4.478,261.272,0,255.75,0z M57.75,155 c-3.584,0-6.5-2.916-6.5-6.5s2.916-6.5,6.5-6.5h104.5c3.687,0,7.076-2.03,8.816-5.281c1.74-3.252,1.55-7.197-0.496-10.266 L158.936,109h19.963l26.333,39.5L178.898,188h-19.963l11.635-17.453c2.046-3.068,2.236-7.014,0.496-10.266 c-1.74-3.251-5.129-5.281-8.816-5.281H57.75z M245.75,277h-128.5V175h26.314l-11.635,17.453 c-2.046,3.068-2.236,7.014-0.496,10.266c1.74,3.251,5.129,5.281,8.816,5.281h44c3.344,0,6.466-1.671,8.32-4.453l33-49.5 c2.239-3.358,2.239-7.735,0-11.094l-33-49.5c-1.854-2.782-4.977-4.453-8.32-4.453h-44c-3.688,0-7.076,2.03-8.816,5.281 c-1.74,3.252-1.55,7.197,0.496,10.266L143.564,122H117.25V20h128.5V277z">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg></li>
+            </ul>
+         
+        </div>
+        <div class="responsive">
+            <ul class="no-hover">
+                <li class="fl no-hover"><img style="width: 180px;height: 40px;"
+                        src="../../../../Downloads/MargeyLabs.png" /></li>
+            </ul>
+            <ul class="">
+                <li  class="fl no-hover"><svg width="24px" height="24px" viewBox="0 0 16 16" fill="none"  stroke="#0071bd"
+                        stroke-width="0.00016">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M1 5H15V7H1V5Z" fill="#0071bd"></path>
+                            <path d="M1 9H15V11H1V9Z" fill="#0071bd"></path>
+                            <path d="M1 13H15V15H1V13Z" fill="#0071bd"></path>
+                            <path d="M1 1H15V3H1V1Z" fill="#0071bd"></path>
+                        </g>
+                    </svg></li>
+            </ul>
+        </div>
+        <div style="margin-top: 5rem !important;">
+            <div class="div"></div>
+            <div class="div"></div>
+            <div class="div"></div>
+          </div>
+    </header>
+
+
+
+
+
+
+    <p style="width: 300px;float: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente odio
+        voluptatibus molestias porro eos obcaecati, reiciendis aliquam ex quos. Magnam enim facere maxime harum iusto
+        atque corrupti explicabo, pariatur autem.
+        Totam, atque mollitia minus nesciunt deserunt eveniet veritatis, officiis earum esse, asperiores et? At sequi
+        nulla deleniti. Minus ad inventore debitis magnam laboriosam deleniti, maiores tenetur alias molestiae molestias
+        minima.
+        Fugiat ea necessitatibus commodi officiis quasi nulla rerum illum molestiae incidunt nobis eligendi, iure, atque
+        neque in quas ad sequi, aspernatur placeat repellendus mollitia? Aut ipsa fugiat assumenda? Necessitatibus,
+        aspernatur.</p>
+    <p style="width: 300px;float: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente odio
+        voluptatibus molestias porro eos obcaecati, reiciendis aliquam ex quos. Magnam enim facere maxime harum iusto
+        atque corrupti explicabo, pariatur autem.
+        Totam, atque mollitia minus nesciunt deserunt eveniet veritatis, officiis earum esse, asperiores et? At sequi
+        nulla deleniti. Minus ad inventore debitis magnam laboriosam deleniti, maiores tenetur alias molestiae molestias
+        minima.
+        Fugiat ea necessitatibus commodi officiis quasi nulla rerum illum molestiae incidunt nobis eligendi, iure, atque
+        neque in quas ad sequi, aspernatur placeat repellendus mollitia? Aut ipsa fugiat assumenda? Necessitatibus,
+        aspernatur.</p>
+    <p style="width: 100px;float: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente odio
+        voluptatibus molestias porro eos obcaecati, reiciendis aliquam ex quos. Magnam enim facere maxime harum iusto
+        atque corrupti explicabo, pariatur autem.
+        .</p>
+    <img style="width: 300px;height: 300px;" src="../../../../Downloads/apple.jpeg" />
+</body>
+
+</html>
