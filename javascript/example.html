@@ -1,13 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./practice.js"></script>
+    <!-- <script src="./DOMmanipulation.js"></script> -->
+     <style>
+        .container{
+            border: 1px solid black;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            padding: 20px 20px;
+            font-family: sans-serif;
+            border-radius: 5px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;;
+        }
+
+        .login-page{
+            border-radius: 4px;
+            height: 30px ;
+            width: 70px;
+            padding: 5px 5px;
+            color: white;
+            background-color: rgba(12, 86, 86, 0.967);
+        }
+
+
+     </style>
 </head>
+
 <body>
-    
-    </div>
+
 </body>
+<script>
+    const body = document.getElementsByTagName("body")[0];
+
+    const div = document.createElement("div");
+    div.className='container'
+    body.appendChild(div);
+
+    const h1 = document.createElement("h1");
+    h1.innerHTML = "LOGIN PAGE";
+    h1.style.color="#0071bd"
+    div.appendChild(h1);
+
+    const line = document.createElement("br");
+    div.appendChild(line);
+
+    const emailLabel = document.createElement("label");
+    emailLabel.innerHTML = "Email: ";
+    emailLabel.style.color="rgba(128, 128, 128, 0.688)";
+    div.appendChild(emailLabel);
+
+    const line1 = document.createElement("br");
+    div.appendChild(line1);
+
+    const email = document.createElement("input");
+    email.setAttribute("type", "email");
+    email.setAttribute("placeholder", "Enter email");
+    email.style.width="150px";
+    email.style.height="20px";
+    div.appendChild(email);
+
+    const line2 = document.createElement("br");
+    div.appendChild(line2);
+
+    const line6 = document.createElement("br");
+    div.appendChild(line6);
+
+    const paswordLabel = document.createElement("label");
+    paswordLabel.innerHTML = "Password: ";
+    paswordLabel.style.color="rgba(128, 128, 128, 0.688)";
+    div.appendChild(paswordLabel);
+
+    const line3 = document.createElement("br");
+    div.appendChild(line3);
+
+    const password = document.createElement("input");
+    password.setAttribute("type", "password");
+    password.setAttribute("placeholder", "Enter password");
+    password.style.width="150px";
+    password.style.height="20px";
+    div.appendChild(password);
+
+    const line4 = document.createElement("br");
+    div.appendChild(line4);
+
+    const line5 = document.createElement("br");
+    div.appendChild(line5);
+
+    const btn = document.createElement("button");
+    btn.innerHTML = "LOGIN";
+    btn.className="login-page"
+    div.appendChild(btn);
+
+
+
+</script>
+
 </html>

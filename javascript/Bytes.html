@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            row-gap: 10px;
+            padding: 10px 10px;
+            margin: 0;
+            justify-content: center;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        .image {
+            height: 50px;
+            width: 120px;   
+        }
+
+        .f1,
+        .f2,
+        .f3,
+        .f4,
+        .f5 {
+            margin: 5px 30px;
+            color: #0071bd;
+            padding: 10px 10px;
+        }
+
+        .f1:hover,
+        .f2:hover,
+        .f3:hover,
+        .f4:hover,
+        .f5:hover {
+            color: white;
+            background-color: #0071bd;
+            padding: 10px 10px;
+            border-radius: 5px;
+        }
+
+        .box1 {
+            float: left;
+            /* border: 1px solid black; */
+            margin: 5px 15px;
+        }
+
+        .box2 {
+            /* border: 1px solid black; */
+            margin: 5px 450px;
+            padding: 20px 20px;
+            width: 60vw;
+            height: 60vh;
+        }
+
+
+        .get-started {
+            cursor: pointer;
+            width: 140px;
+            height: 50px;
+            color: white;
+            background-color: #0661A7;
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+
+        .get-started:hover {
+            background-color: #09416bdc;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<script>
+    const body = document.getElementsByTagName("body")[0];
+
+    const div = document.createElement("div");
+    div.className = 'container'
+    body.appendChild(div)
+
+    const divi = document.createElement("div");
+
+
+    const img = document.createElement("img");
+    img.className = "image";
+    img.src = "https://bytesplash.in/assets/logo/ByteSplash_Logo.png";
+    div.appendChild(img);
+
+    const div1 = document.createElement("div");
+    div1.innerHTML = "Home"
+    div1.className = 'f1'
+    div.appendChild(div1);
+
+    const div2 = document.createElement("div");
+    div2.innerHTML = "Courses"
+    div2.className = 'f2'
+    div.appendChild(div2);
+
+    const div3 = document.createElement("div");
+    div3.innerHTML = "ContactUs"
+    div3.className = 'f3'
+    div.appendChild(div3);
+
+    const div4 = document.createElement("div");
+    div4.innerHTML = "+91 88660803099"
+    div4.className = 'f4'
+    div.appendChild(div4);
+
+    const div5 = document.createElement("div");
+    div5.innerHTML = "@bytesplash.in"
+    div5.className = 'f5'
+    div.append(div5);
+
+    const container = document.createElement("div");
+    container.className = "box1";
+    body.appendChild(container);
+
+    const img1 = document.createElement("img");
+    img1.style.width = "400px";
+    img1.style.height = "450px";
+    img1.src = "https://bytesplash.in/assets/images/Designer-discuss.png";
+    container.appendChild(img1);
+
+    const container2 = document.createElement("div");
+    container2.className = "box2";
+    body.appendChild(container2);
+
+    const h1 = document.createElement("h1");
+    h1.innerHTML = "The Best Software Training And Placement Institute In Marathahalli, Bengaluru";
+    container2.appendChild(h1);
+
+    const p = document.createElement("p");
+    p.innerHTML = "All Courses Included with the Student Dahsboard wth Byte Splash LMS, LearningManagement System for the students as the <br>dashboard for the courses and its assigments and daily class recordings.";
+    container2.appendChild(p);
+    p.style.color = "rgba(128, 128, 128, 0.688)";
+    p.style.fontFamily = "sans-serif"
+
+    const btn = document.createElement("button");
+    btn.innerHTML = "Get Started";
+    btn.className = "get-started"
+    container2.appendChild(btn);
+
+    const h2 = document.createElement("h2");
+    h2.innerHTML = "Courses";
+    h2.style.color = "rgba(128, 128, 128, 0.688)";
+    p.style.fontFamily = "sans-serif"
+    container2.appendChild(h2);
+
+    const img2 = document.createElement("img");
+    img2.style.width="65vw";
+    img2.src = "https://bytesplash.in/assets/images/courses-icons.png";
+    container2.appendChild(img2);
+
+
+
+</script>
+
+</html>
