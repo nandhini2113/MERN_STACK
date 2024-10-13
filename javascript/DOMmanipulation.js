@@ -38,7 +38,3 @@ const btn = document.createElement("button");
 btn.innerHTML = "LOGIN";
 div.appendChild(btn);
 
-
-
-
-

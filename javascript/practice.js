@@ -20,18 +20,25 @@ function createMultiplier(n){
 let a = createMultiplier(2);
 console.log(a(9));
 
+//5.
+let a1 = [1,2,3,4,5];
+let result = a1.map(a=>a*2);
+r = result.filter(a=>a%2==0);
+console.log(r);
 
 //6.
 let arr = [1,2,3,4,5];
 result = arr.reduce((a,b)=>a*b);
 console.log(result);
 
-let r = arr.reduce((a,b)=>{
+let r1 = arr.reduce((a,b)=>{
     console.log(a,b);
     return a*b   
 });
-console.log(r);
+console.log(r1);
 
+
+//7.
 
 
 //8.
@@ -48,19 +55,21 @@ let x = person.print.call(person, 'New York', 'USA');
 //9.
 let y = person.print.apply(person, ['New York', 'USA']);
 
-//12.
+//12.uisng clousers
 function createCounter(){
     let s = {
         name : ['bob', 'alice','john'],
         age: [20,21,21]};
         return function getCount(){
             let count=0;
-            for(let i=0;i<s.name.length;i++)
-                count++;  
-            return count; 
+            return function increment(){
+                for(let i=0;i<s.name.length;i++)
+                    count++;  
+                return count; 
         }
+        }    
 }
-let z=createCounter();
+let z=createCounter()();
 console.log(z());
 
 
