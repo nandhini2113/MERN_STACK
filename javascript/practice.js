@@ -50,10 +50,10 @@ const person =
         console.log(`I'm ${this.name}, ${this.age} years old, from ${city}, ${country}`);
     }
 }
-let x = person.print.call(person, 'New York', 'USA');
+person.print.call(person, 'New York', 'USA');
 
 //9.
-let y = person.print.apply(person, ['New York', 'USA']);
+person.print.apply(person, ['New York', 'USA']);
 
 //12.uisng clousers
 function createCounter(){

@@ -20,10 +20,14 @@ const p = `{
     "age": 25,
     "hobbies": "reading"
 }`;
+console.log(p);
+// console.log(p.name);
+
+// console.log(p[name]);
+
 const p1 = JSON.parse(p);
-console.log(p1);
-
-
+console.log(p1.name);
+console.log(p1["name"]);
 
 //object methods
 
@@ -184,7 +188,7 @@ console.log(r3);
 // removes any resulting numbers greater than 10:
 const numbers = [1, 2, 3, 4, 5, 6]; 
 // // Use flatMap to double numbers and filter out results > 10
-const r4 = numbers.flatMap(a=>a*2);
+const r4 = numbers.flatMap((a)=>a*2);
 console.log(r4);
 
 const r5 = r4.filter(a=>a>10);
